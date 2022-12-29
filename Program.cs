@@ -3,7 +3,7 @@
 Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввел пользователь.
 */
 
-Console.Write("Введите числа через запятую: ");
+Console.Write("Введите числа (через запятую): ");
 int[] numbers = StringToNum(Console.ReadLine());
 PrintArray(numbers);
 int sum = 0;
@@ -15,7 +15,7 @@ for (int i = 0; i < numbers.Length; i++)
     }
 }
 Console.WriteLine();
-Console.WriteLine($"количество значений больше 0 = {sum}");
+Console.WriteLine($"количество значений больше нуля - {sum}");
 
 
 int[] StringToNum(string input)
